@@ -72,16 +72,18 @@ gobject prepare 0 1 1507489984 5b5b2270726f706f73616c222c7b22656e645f65706f63682
 
 The 0 after the prepare is always a 0 if it is the first version of the proposal.  The 1 is a one if it is the first version.
 
-Now you are going to copy and paste that into the debug console, but remember once you hit enter your  10 TRC is gone and the proposal is “prepared.”
+Unlock your wallet, and now you are going to copy and paste that into the debug console, but remember once you hit enter your  10 TRC is gone and the proposal is “prepared.”
 
 It will output a line of garbage which needs to be saved for the next step. It should look something like this:
 aed513880fdce4fe13dcb68680f19a245f4b3a74ca27cdf100ddd0945eac5c61
 
+Lock your wallet.
+
 **Step 6. Submit**
 
-Now you are going to take your last command and change one thing, and put that line of code at the end.  Change “prepare” to “submit” and put the line of garbage at the end.  It should look like this:
+Wait for your proposal payment to get 6 confirmations.  Once that is done you are going to take your last command and change two things.  Change “prepare” to “submit” and put the line of garbage at the end.  It should look like this:
 
-gobject submit 0 1 1507489984 5b5b2270726f706f73616c222c7b22656e645f65706f6368223a2231353339303030303030222c226e616d65223a225465727261636f696e205465616d20506179222c227061796d656e745f61646472657373223a22314c4b525a476959534d373450745043484c643379524d4446613671654d57787868222c227061796d656e745f616d6f756e74223a2236343830222c2273746172745f65706f6368223a2231353037343838383136222c2274797065223a312c2275726c223a2268747470733a2f2f6769746875622e636f6d2f7465727261636f696e2f70726f706f73616c732f6973737565732f32227d5d5d aed513880fdce4fe13dcb68680f19a245f4b3a74ca27cdf100ddd0945eac5c61
+gobject submit 0 1 1507489984 5b5b2270726f706f73616c222c7b22656e645f65706f6368223a2231353339303030303030222c226e616d65223a225465727261636f696e205465616d20506179222c227061796d656e745f61646472657373223a22314c4b525a476959534d373450745043484c643379524d4446613671654d57787868222c227061796d656e745f616d6f756e74223a2236343830222c2273746172745f65706f6368223a2231353037343838383136222c2274797065223a312c2275726c223a2268747470733a2f2f6769746875622e636f6d2f7465727261636f696e2f70726f706f73616c732f6973737565732f32227d5d5d c0e2c002f9d94f0b2d6ef4f090bf515de37748aafcae6fbed9e7f05c260829f0
 
 Once you hit enter it will return the proposal hash.  This is very important because this is how you get people to vote on your proposal.
 
