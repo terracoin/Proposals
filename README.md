@@ -1,10 +1,10 @@
-How to put in a Proposal
+# H2 How to put in a Proposal
 
-1. Useful console commands
+**1. Useful console commands**
 
-getgovernanceinfo - This shows when the next superblock will be produced.
-gobject list - This shows the proposals currently available for voting.
-gobject vote-many HASH funding yes (or no).
+*getgovernanceinfo* - This shows when the next superblock will be produced.
+*gobject list* - This shows the proposals currently available for voting.
+*gobject vote-many HASH funding yes* (or no).
 
 2. How it works
 
@@ -26,7 +26,7 @@ Uncheck the padding option
 
 You will also need to convert current and future times into a Epoch Unix Time Stamp.  Here is the site I recommend: https://www.unixtimestamp.com/
 
-4. How to do it
+4. How to do it - Prepare
 
 Now is when it gets complicated.
 
@@ -52,4 +52,8 @@ This looks like a big pile of garbage so I will break it down.
 
 “url” This is the url of your proposal.  It can be any website, but it is recommended that people use the issues tab here on Github.
 
-Once you have filled out all of those areas your proposal should look
+Once you have filled out all of those areas your proposal should look like this:
+
+[["proposal",{"end_epoch":"1539000000","name":"Terracoin Team Pay","payment_address":"1LKRZGiYSM74PtPCHLd3yRMDFa6qeMWxxh","payment_amount":"6480","start_epoch":"1507488816","type":1,"url":"https://github.com/terracoin/proposals/issues/2"}]]
+
+Now you need to “prepare” the proposal.
